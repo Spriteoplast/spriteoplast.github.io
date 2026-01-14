@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antara Mutalik – Architecture Portfolio</title>
+
+  <!-- Google Font: Roboto Light -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+  <style>
+    /* =====================
+       RESET + GLOBALS
+    ===================== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Roboto Mono', monospace;
+      font-weight: 300;
+      background: #0f0f0f;
+      color: #eaeaea;
+      line-height: 1.6;
+    }
+
+    img { width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    /* =====================
+       HEADER
+    ===================== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 1.5rem;
+    }
+
+    .site-name {
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 0.06em;
+    }
+    .menu { opacity: 0.7; }
+
+    /* =====================
+       HERO
+    ===================== */
+    .hero {
+      padding: 5rem 1.5rem 3.5rem;
+      max-width: 720px;
+    }
+
+    .hero h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin-bottom: 1.2rem;
+    }
+
+    .hero p { opacity: 0.8; }
+
+    /* =====================
+       PROJECT LIST
+    ===================== */
+    .projects {
+      max-width: 1000px;
+      margin: 4.5rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .project-item {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 1.5rem;
+      align-items: center;
+      padding: 1.4rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      transition: opacity 0.3s ease;
+    }
+
+    .project-item:hover { opacity: 0.75; }
+
+    .project-thumb img {
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .project-title {
+      font-size: 1.1rem;
+      letter-spacing: 0.04em;
+    }
+
+    .project-meta {
+      font-size: 0.8rem;
+      opacity: 0.6;
+      margin-top: 0.3rem;
+    }
+
+    /* =====================
+       ABOUT + CONTACT
+    ===================== */
+    .about {
+      max-width: 560px;
+      margin: 6rem 1.5rem 3rem;
+    }
+
+    .about h2 {
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    .contact {
+      margin: 2rem 1.5rem 4.5rem;
+    }
+
+    .contact a {
+      margin-right: 1.5rem;
+      opacity: 0.7;
+    }
+
+    .contact a:hover { opacity: 1; }
+
+    /* =====================
+       MOBILE
+    ===================== */
+    @media (max-width: 768px) {
+      .project-item {
+        grid-template-columns: 80px 1fr;
+        gap: 1rem;
+        padding: 1.2rem 0;
+      }
+
+      .hero {
+        padding-top: 4rem;
+      }
+    }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" class="site-name">Antara Mutalik</a>
+  <div class="menu">Menu</div>
+</header>
+
+<section class="hero">
+  <h1>Architecture Portfolio</h1>
+  <p>Selected architectural works focusing on minimalism, spatial clarity, and contextual design.</p>
+</section>
+
+<!-- =====================
+     PROJECT LIST
+     EACH ITEM LINKS TO ITS OWN PAGE
+===================== -->
+<section class="projects">
+
+  <!-- PROJECT 01 -->
+  <a href="project-01.html" class="project-item">
+    <div class="project-thumb">
+      <img src="assets/images/project-01-thumb.jpg" alt="Project 01 thumbnail">
+    </div>
+    <div>
+      <div class="project-title">Project Title One</div>
+      <div class="project-meta">Location · Year</div>
+    </div>
+  </a>
+
+  <!-- PROJECT 02 -->
+  <a href="project-02.html" class="project-item">
+    <div class="project-thumb">
+      <img src="assets/images/project-02-thumb.jpg" alt="Project 02 thumbnail">
+    </div>
+    <div>
+      <div class="project-title">Project Title Two</div>
+      <div class="project-meta">Location · Year</div>
+    </div>
+  </a>
+
+  <!-- PROJECT 03 -->
+  <a href="project-03.html" class="project-item">
+    <div class="project-thumb">
+      <img src="assets/images/project-03-thumb.jpg" alt="Project 03 thumbnail">
+    </div>
+    <div>
+      <div class="project-title">Project Title Three</div>
+      <div class="project-meta">Location · Year</div>
+    </div>
+  </a>
+
+</section>
+
+<section class="about">
+  <h2>About</h2>
+  <p>
+    Antara Mutalik is an architecture student interested in minimal spatial strategies, careful material articulation, and urban context. The work emphasizes restraint, atmosphere, and clarity.
+  </p>
+</section>
+
+<section class="contact">
+  <a href="mailto:your@email.com">Email</a>
+  <a href="#">Instagram</a>
+  <a href="#">LinkedIn</a>
+</section>
+
+<!-- =====================
+PROJECT PAGE TEMPLATE (SAVE AS project-01.html etc.)
+=====================
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Project Title – Antara Mutalik</title>
+</head>
+<body>
+  <header>
+    <a href="index.html">← Back</a>
+  </header>
+  <h1>Project Title</h1>
+  <p>Location · Year</p>
+  <img src="assets/images/project-01.jpg">
+  <p>Project description text...</p>
+</body>
+</html>
+-->
+
+</body>
+</html>
