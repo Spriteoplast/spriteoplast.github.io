@@ -37,6 +37,33 @@
     /* =====================
        HEADER (HOME BUTTON)
     ===================== */
+
+      
+    project-content {
+      max-width: 800px;    /* controls image + text width */
+      margin: 4rem auto;   /* centers content */
+      padding: 0 1.5rem;
+    }
+    
+    .project-image {
+      margin: 3rem 0;
+    }
+    
+    .project-image img {
+      width: 100%;
+      max-width: 650px;    /* THIS makes images smaller */
+      margin: 0 auto;
+      display: block;
+    }
+    
+    .caption {
+      font-size: 0.8rem;
+      opacity: 0.6;
+      margin-top: 0.6rem;
+      text-align: left;
+    }
+
+    
     header {
       display: flex;
       justify-content: space-between;
@@ -116,51 +143,52 @@
   <!-- =====================
        IMAGE 01
        HOW TO ADD IMAGES:
-       1. Put image in assets/images/
+       1. Put image in /assets/images/
        2. Change filename below
   ===================== -->
-  <div class="image-block">
-    <img src="101_finalmodel_4.png" alt="Project image 01">
-    <div class="caption">image 1</div>
-  </div>
 
-  <!-- IMAGE 02 -->
-
-
-  <!-- IMAGE 03 (OPTIONAL — DUPLICATE IF NEEDED) -->
-  <div class="image-block">
-    <img src="/assets/images/101_finalmodel_1.png" alt="Project image 03">
-    <div class="caption">Caption describing image 03</div>
-  </div>
-
-   <div class="image-block">
-    <img src="/assets/images/101_finalmodel_3.png" alt="Project image 03">
-    <div class="caption">Caption describing image 03</div>
-  </div>
-
-   <div class="image-block">
-    <img src="/assets/images/101_finalmodel_5.png" alt="Project image 03">
-    <div class="caption">Caption describing image 03</div>
-  </div>
-
-   <div class="image-block">
-    <img src="/assets/images/101_finalmodel_6.png" alt="Project image 03">
-    <div class="caption">Caption describing image 03</div>
-  </div>
-
-   <div class="image-block">
-    <img src="/assets/images/101_finaldrawing_1.png" alt="Project image 03">
-    <div class="caption">Caption describing image 03</div>
-  </div>
+  <section class="project-content">
 
     <div class="image-block">
-    <img src="/assets/images/101_finaldrawing_2.jpg" alt="Project image 03">
-    <div class="caption">Caption describing image 03</div>
-  </div>
+      <img src="101_finalmodel_4.png" alt="Project image 01">
+      <div class="caption">image 1</div>
+    </div>
+  
+    <div class="image-block">
+      <img src="/assets/images/101_finalmodel_1.png" alt="Project image 03">
+      <div class="caption">Caption describing image 03</div>
+    </div>
+  
+     <div class="image-block">
+      <img src="/assets/images/101_finalmodel_3.png" alt="Project image 03">
+      <div class="caption">Caption describing image 03</div>
+    </div>
+  
+     <div class="image-block">
+      <img src="/assets/images/101_finalmodel_5.png" alt="Project image 03">
+      <div class="caption">Caption describing image 03</div>
+    </div>
+  
+     <div class="image-block">
+      <img src="/assets/images/101_finalmodel_6.png" alt="Project image 03">
+      <div class="caption">Caption describing image 03</div>
+    </div>
+  
+     <div class="image-block">
+      <img src="/assets/images/101_finaldrawing_1.png" alt="Project image 03">
+      <div class="caption">Caption describing image 03</div>
+    </div>
+  
+      <div class="image-block">
+      <img src="/assets/images/101_finaldrawing_2.jpg" alt="Project image 03">
+      <div class="caption">Caption describing image 03</div>
+    </div>
 
-<a href="/assets/images/101_finalR+D.pdf" target="_blank">
-  View R+D PDF
-</a>
+    <a href="/assets/images/101_finalR+D.pdf" target="_blank">
+      View R+D PDF
+    </a>
+
+    
   <!-- =====================
        PROJECT DESCRIPTION
        (EDIT TEXT BELOW)
